@@ -2182,7 +2182,9 @@ body.dark .blog-page-section .blog-single {
     color: #ECE273 !important;
 }
 
-
+.social-icons li:nth-child(3) a:hover {
+    color: #ECE273 !important;
+}
 
 
 /* === Go to Top === */

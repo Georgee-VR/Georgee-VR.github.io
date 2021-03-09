@@ -1475,52 +1475,46 @@ select.portfolio-filter-mobile {
 /*=================================================================*/
 
 #eye{
-    animation: blink 1.9s infinite;
-    -moz-animation: blinks 1.9s infinite;
+    animation: blinks 1.9s infinite;
+    
 }
 
-@-moz-keyframes blinks {
+
+
+
+@keyframes blinks {
     0% {
         opacity: 0;
-        -moz-transition-timing-function: linear;
+       
+        
       
     }
     
     
-    100% {
-        opacity: 10;
-        -moz-transition-timing-function: linear;
-    }
-  }
-
-
-@keyframes blink {
-    0% {
-        opacity: 0;
-      
-    }
     10% {
-        opacity: 100;
-      
+        opacity: 1;
+        
+       
+        
     }
 
-    11%
-    {
+    15% {
         opacity: 0;
-      
+        
+       
+        
     }
 
-    12%{
-        opacity: 100;
+    21% {
+        opacity: 1;
+        
+       
+        
     }
-    50% {
-        opacity: 00;
-      
-    }
-    
-    100% {
-        opacity: 100;
-    }
+
+
+
+
   }
 
 #brow{

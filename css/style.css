@@ -1484,7 +1484,7 @@ select.portfolio-filter-mobile {
 
 @keyframes blinks {
     0% {
-        opacity: 0;
+        opacity: 1;
        
         
       
@@ -1492,20 +1492,33 @@ select.portfolio-filter-mobile {
     
     
     10% {
-        opacity: 1;
-        
-       
-        
-    }
-
-    15% {
         opacity: 0;
         
        
         
     }
 
+    15% {
+        opacity: 1;
+        
+       
+        
+    }
+
     21% {
+        opacity: 0;
+        
+       
+        
+    }
+ 
+ 26% {
+        opacity: 1;
+        
+       
+        
+    }
+ 100% {
         opacity: 1;
         
        

@@ -26,15 +26,7 @@
 <body>
     
 
-    <!-- Preloader develop -->
-    <div id="preloader" class="light">
-        <div class="outer">
-            <!-- Google Chrome -->
-            <div class="infinityChrome">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+    
 
             <!-- Safari and others -->
             <div class="infinity">
@@ -441,7 +433,7 @@
                         <!-- client item -->
                         <div class="client-item">
                             <div class="inner">
-                                <i class="devicon-bootstrap-plain-wordmark"></i>
+                                <i class="devicon-javascript-plain"></i>
 
                             </div>
                         </div>
@@ -450,7 +442,7 @@
                         <!-- client item -->
                         <div class="client-item">
                             <div class="inner">
-                                <i class="devicon-javascript-plain"></i>
+                                <i class="devicon-react-original-wordmark"></i>
                             </div>
                         </div>
                     </div>
@@ -935,7 +927,7 @@
             
             
 
-            const geometry = new THREE.BoxGeometry( 100, 100, 100 );
+            const geometry = new THREE.SphereGeometry( 10, 10, 10 );
 
 
 
@@ -949,7 +941,7 @@
 
            const material = new THREE.MeshBasicMaterial(  
                 {
-                color: 0xECE273,
+                color: 0x000,
                 wireframe: true,
                 
                 
@@ -960,7 +952,7 @@
 
             group = new THREE.Group();
 
-            for ( let i = 0; i < 1000; i ++ ) {
+            for ( let i = 0; i < 10000; i ++ ) {
 
                 const mesh = new THREE.Mesh( geometry, material );
                 mesh.position.x = Math.random() * 8000 - 1000;

@@ -673,7 +673,7 @@
                                     <span class="more-button"><i class="icon-options"></i></span>
                                 </div>
                                 <div class="thumb">
-                                    <img src="images/works/Cuid.svg" alt="Portfolio-title" />
+                                    <img src="images/works/Cuid.png" alt="Portfolio-title" />
                                     <div class="mask"></div>
                                 </div>
                             </div>
@@ -958,12 +958,12 @@
         let mouseX = 0, mouseY = 0;
         let windowHalfX = window.innerWidth / 2;
         let windowHalfY = window.innerHeight / 2;
-
         init();
         animate();
 
-        function init() {
+       
 
+        function init() {
             camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight , 1, 10000 );
             camera.position.z = 500;
             scene = new THREE.Scene();
@@ -993,7 +993,24 @@
                 mesh.matrixAutoUpdate = false;
                 mesh.updateMatrix();
                 group.add( mesh );
+
+                function update(){
+
+                    if (mesh.material.wireframe == true){
+                        mesh.material.wireframe = false;
+                        mesh.material.color.set(0xECE273);
+                        scene.background = new THREE.Color( 0x000000 );
+                    } else{
+                        mesh.material.wireframe = true;
+                        mesh.material.color.set(0x000);   
+                    }
+                    
+            
+                }
+                 window.changeColor =  update;
             }
+
+            
 
             scene.add( group );
             const backgrn = document.querySelector("#backomega");
